@@ -1,0 +1,263 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* header */
+header {
+  width: 100%;
+  position: fixed;
+  background:#EEEFF1;
+}
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  width: 57%;
+  padding: 25px 0;
+}
+.logo {
+  text-align: center;
+  color: #34547A;
+  font-size: 48px;
+  font-family: 'Revalia', cursive;
+}
+nav a {
+  font-size: 16px;
+  color: #34547A;
+  text-decoration: none;
+  padding: 0 0 0 30px;
+}
+.submit1 {
+  margin: auto;
+  height: 55px;
+  background: #34547a;
+  color: white;
+  border: none;
+  outline: none;
+  padding: 0 45px;
+  text-transform: uppercase; /* позволяет сделать буквы заглавными */
+}
+nav a:hover {
+  color: black;
+}
+/* дизайн и вёрстка */
+.designandlayout {
+  height: 100vh;
+  background: #EEEFF1;
+  padding: 250px 0;
+}
+.designandlayout-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  width: 60%;
+}
+.designandlayout-wrapper img {
+  object-fit: contain;
+}
+.designandlayout-info {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  flex-direction: column;
+}
+.designandlayout-info-title {
+  font-size: 32px;
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 40px;
+}
+.designandlayout-info-descr {
+  font-size: 16px;
+  margin-bottom: 60px;
+  color: #727272;
+}
+/* обо мне */
+.aboutme {
+  padding: 119px 0 100px;
+}
+.aboutme-title {
+  font-size: 32px;
+  text-align: center;
+}
+.aboutme-descr {
+  font-size: 16px;
+  width: 30%;
+  text-align: center;
+  margin: 50px auto 65px;
+}
+/* 40+ проектов */
+.fortyprojects {
+  padding: 100px 0;
+  background: #34547A;
+}
+.fortyprojects-wrapper {
+  width: 55%;
+  margin: auto; /* ставим по центру*/
+  display: flex;
+}
+.fortyprojects-wrapper img {
+  width: calc(17% - 30px);
+  margin-right: 30px;
+}
+/* Мои навыки */
+.skills {
+  padding: 100px 0;
+}
+.skills-wrapper {
+  width: 60%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.skill-info {
+  flex: 1;
+}
+.skills-title {
+  font-size: 32px;
+  margin-bottom: 50px;
+}
+.skill {
+  margin-bottom: 30px;
+}
+.skill-name {
+  color: #727272;
+  margin-bottom: 20px;
+}
+.skill-scale {
+  height: 5px;
+  background: #c4c4c4;
+  max-width: 300px;
+}
+.skill-scale-internal {
+  width: 80%;
+  height: 5px;
+  background: #34547a;
+}
+.skill-image {
+  width: 50%;
+}
+/* как я работаю */
+.process {
+  background-color: #eeeff1;
+  padding: 100px 0;
+}
+.process-title {
+  font-size: 32px;
+  text-align: center;
+}
+.process-discr {
+  color: #727272;
+  text-align: center;
+  width: 30%;
+  margin: 50px auto 57px;
+}
+.process-video {
+  width: 60%;
+  aspect-ratio: 16/9;
+  display: block;
+  margin: auto;
+}
+/* projects */
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+}
+.projects-item {
+  width: 25%;
+  aspect-ratio: 1/1;
+  background-size: cover; /* cover - полная ширина, высота автоматически. contain - полная высота, ширина автоматически */
+}
+
+.sticker {
+  background-image: url(./Images/Sticker.png);
+}
+.laptop {
+  background-image: url(./Images/Laptop.png);
+}
+.project-item-hover {
+  height: 100%; /* на всю высоту projects-item */
+  background: linear-gradient(
+    0deg,
+    rgba(52, 84, 122, 0.8),
+    rgba(52, 84, 122, 0.8)
+  );
+  opacity: 0; /* opacity - прозрачный, 1 - не прозрачный; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0, 5s;
+}
+.project-item-hover:hover {
+  opacity: 1;
+}
+/* microsoft */
+.microsoft {
+  padding: 100px 0;
+}
+.microsoft-wrapper {
+  width: 60%;
+  margin: auto;
+  display: flex;
+}
+.microsoft-wrapper img {
+  /* img только те, которые внутри .microsoft-wrapper */
+  width: calc(25% - 30px);
+  margin-right: 30px;
+}
+/* форма */
+.form {
+  background-color: #eeeff1;
+  padding: 100px 0;
+}
+.form-title {
+  font-size: 32px;
+  text-align: center;
+}
+.form-descr {
+  font-size: 16px;
+  width: 30%; /* 540 текст, 1920 весь section, 540/1920x100=30% */
+  text-align: center;
+  margin: 50px auto 65px;
+}
+form {
+  width: 30%;
+  margin: auto;
+}
+textarea {
+  width: 100%;
+  border: none;
+  outline: none;
+  margin-bottom: 50px;
+  padding: 20px;
+}
+.form-control {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+input[type="text"],
+input[type="email"] {
+  width: 45%;
+  padding: 20px;
+  border: none; /* убираем границу inputa */
+  outline: none; /* при нажатии на input есть граница, с помощью outline none можно её убрать */
+}
+.submit2 {
+  display: block;
+  margin: auto;
+  height: 55px;
+  background: #34547a;
+  color: white;
+  border: none;
+  outline: none;
+  padding: 0 45px;
+  text-transform: uppercase; /* позволяет сделать буквы заглавными */
+}
+/*
+margin: auto; центрирование - отступ слева и справа равный
+margin: 50px auto 65px; - вверху 50, справа и слева - 0, снизу 65px
+[type="text"] - cелектор
+*/
